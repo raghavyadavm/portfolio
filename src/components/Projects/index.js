@@ -1,42 +1,33 @@
 import React from 'react';
-import styled from 'styled-components';
+import { withStyles } from '@material-ui/core/styles';
 
-const ProjectsPageWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-columns: 1fr;
-  max-width: 100%;
-  max-height: 100%;
-`;
+import Card from './Card';
+import data from './data';
 
-const ProjectItemsWrapper = styled.div`
-  width: 250px;
-  padding: 16px;
-  text-align: center;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 3px #ccc;
-  margin: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-`;
+const styles = theme => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper
+  }
+});
 
-const projects = props => {
-  return (
-    <ProjectsPageWrapper>
-      <ProjectItemsWrapper>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-      </ProjectItemsWrapper>
-      <ProjectItemsWrapper>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-      </ProjectItemsWrapper>
-    </ProjectsPageWrapper>
-  );
+const Projects = props => {
+  const { classes } = props;
+  let card = data.map(data => (
+    <Card
+      key={data.title}
+      title={data.title}
+      description={data.description}
+      technologies={data.technologies}
+      srcLink={data.srcLink}
+      demoLink={data.demoLink}
+    />
+  ));
+
+  return <div className={classes.root}>{card}</div>;
 };
 
-export default projects;
+export default withStyles(styles)(Projects);
