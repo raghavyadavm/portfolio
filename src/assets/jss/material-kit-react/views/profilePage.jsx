@@ -1,6 +1,6 @@
-import { container, title } from "assets/jss/material-kit-react.jsx";
+import { container, title } from "../../material-kit-react";
 
-import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
+import imagesStyle from '../../material-kit-react/imagesStyles.jsx';
 
 const profilePageStyle = {
   container,
@@ -26,7 +26,8 @@ const profilePageStyle = {
   main: {
     background: "#FFFFFF",
     position: "relative",
-    zIndex: "3"
+    zIndex: "3",
+    boxSizing: "border-box"
   },
   mainRaised: {
     margin: "-60px 30px 0px",

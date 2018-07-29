@@ -14,9 +14,6 @@ const styles = theme => ({
     marginTop: 40,
     marginBottom: 10
   },
-  content: {
-    flex: '1 0 auto'
-  },
   controls: {
     display: 'flex',
     alignItems: 'center',

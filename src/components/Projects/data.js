@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Css3Alt } from 'styled-icons/fa-brands/Css3Alt';
+
 import { Html5 } from 'styled-icons/fa-brands/Html5';
 import { Js } from 'styled-icons/fa-brands/Js';
 import { Node } from 'styled-icons/fa-brands/Node';

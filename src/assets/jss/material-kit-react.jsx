@@ -29,7 +29,8 @@ const conatinerFluid = {
   paddingLeft: "15px",
   marginRight: "auto",
   marginLeft: "auto",
-  width: "100%"
+  width: "100%",
+  marginTop: "200px"
 };
 const container = {
   ...conatinerFluid,
@@ -165,7 +166,7 @@ const title = {
 
 const cardTitle = {
   ...title,
-  marginTop: ".625rem"
+  marginTop: '.625rem'  
 };
 
 const cardLink = {
