@@ -23,7 +23,7 @@ const Projects = props => {
       description={data.description}
       technologies={data.technologies}
       srcLink={data.srcLink}
-      demoLink={data.demoLink}
+      // demoLink={data.demoLink}
     />
   ));
 

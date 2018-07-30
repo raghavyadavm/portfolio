@@ -49,7 +49,7 @@ const data = [
   {
     title: 'IFC Generator for BIM',
     description:
-      'Single Page Web application which uses Berkley Comfort algorithm to find comfort temperature for different buildings',
+      'Single Page Web application which uses Berkeley Comfort algorithm to find comfort temperature for different buildings',
     technologies: (
       <Fragment>
         <ReactLogo size="40" title="ReactJS" css="color: #00d8ff;" />
@@ -170,8 +170,8 @@ const data = [
         <Js size="40" title="JavaScript" css="color: #f7df1e;" />
       </Fragment>
     ),
-    srcLink: '',
-    demoLink: ''
+    srcLink: 'https://github.com/raghavyadavm/',
+    demoLink: 'https://github.com/raghavyadavm/'
   }
 ];
 

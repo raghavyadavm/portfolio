@@ -42,11 +42,11 @@ function SimpleMediaCard(props) {
               Code
             </a>
           </Button>
-          <Button type="button" color="info" simple>
+          {/* <Button type="button" color="info" simple>
             <a href={props.demoLink} target="_blank" style={{ color: '#00acc1', textDecoration: 'none' }}>
               Demo
             </a>
-          </Button>          
+          </Button>           */}
         </CardBody>
       </Card>
     </div>;
